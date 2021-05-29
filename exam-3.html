@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Register Form</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/tahatto">
+        <div>
+            <label for="first">First name</label>
+            <input type="text" name="firstname" id="first" required>
+
+            <label for="last">Last Name</label>
+            <input type="text" name="lastname" id="last"required>
+        </div>
+
+        <div>
+            <p>Select a Race:</p>
+            <p>
+                <input type="radio" name="runtype" id="funrun" >
+                <label for="funrun">Fun Run 5k</label> <br>
+
+
+                <input type="radio" name="runtype" id="half" >
+                <label for="half">Half Marathon</label> <br>
+
+
+                <input type="radio" name="runtype" id="full" >
+                <label for="full">Full Marathon</label> <br>
+            </p>
+        </div>
+
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" required>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required>
+        </div>
+
+        <div>
+            <label for="division">Select Age Group</label>
+            <select name="division" id="division">
+                <option value="kids">under 18</option>
+                <option value="ya">19-30</option>
+                <option value="middle-aged">31-45</option>
+            </select>
+        </div>
+        <button>Register!</button>
+
+    </form>
+</body>
+
+</html>
